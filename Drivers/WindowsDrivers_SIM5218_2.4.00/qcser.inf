@@ -1,0 +1,228 @@
+; Windows XP Virtual Serial Port Setup File
+; Copyright (c) 2006-2007 SimTech Incorporated
+; Manufacturer: SimTech Incorporated
+;
+
+[Version]
+signature  = "$WINDOWS NT$"
+Class      = Ports
+Provider   = %SIMTECH%
+ClassGuid  = {4D36E978-E325-11CE-BFC1-08002BE10318}
+DriverVer  = 11/30/2006,2.0.3.6
+Catalogfile = qcusbser.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[SourceDisksNames]
+  1000 = %SimSrcDisk%,"",,
+
+[SourceDisksFiles]
+  qcusbser.sys = 1000
+  qcusb.inf    = 1000
+
+[Manufacturer]
+%SIMTECH% = SimSerialPort, NTia64, NTamd64
+
+[SimSerialPort]
+%SimDevice00% = SimPortInstall00, USB\VID_05C6&PID_3197&MI_01
+%SimDevice6k%   = SimPortInstall00, USB\VID_05C6&PID_6000&MI_01
+%SimDeviceNMEA% = SimPortInstall00, USB\VID_05C6&PID_6000&MI_02
+%SimDevice7k%   = SimPortInstall00, USB\VID_05C6&PID_7000&MI_01
+%SimDevice7k1%  = SimPortInstall00, USB\VID_05C6&PID_7001&MI_00
+%SimDevice7k3%  = SimPortInstall00, USB\VID_05C6&PID_7001&MI_03
+%SimDevice70020%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_00
+%SimDevice70023%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_03
+%SimDevice70024%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_04
+%SimDevice71010%  = SimPortInstall00, USB\VID_05C6&PID_7101&MI_00
+%SimDevice71015%  = SimPortInstall00, USB\VID_05C6&PID_7101&MI_05
+%SimDevice71020%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_00
+%SimDevice71025%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_05
+%SimDevice71026%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_06
+%SimDevice80000%  = SimPortInstall00, USB\VID_05C6&PID_8000&MI_00
+%SimDevice80002%  = SimPortInstall00, USB\VID_05C6&PID_8000&MI_02
+%SimDevice80010%  = SimPortInstall00, USB\VID_05C6&PID_8001&MI_00
+%SimDevice80012%  = SimPortInstall00, USB\VID_05C6&PID_8001&MI_02
+%SimDevice80020%  = SimPortInstall00, USB\VID_05C6&PID_8002&MI_00
+%SimDevice80022%  = SimPortInstall00, USB\VID_05C6&PID_8002&MI_02
+%SimDevice90080%  = SimPortInstall00, USB\VID_05C6&PID_9008
+%SimDevice90000%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_00
+%SimDevice90001%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_01
+%SimDevice90002%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_02    ;add by aaron
+%SimDevice90010%  = SimPortInstall00, USB\VID_05C6&PID_9001&MI_00
+%SimDevice90011%  = SimPortInstall00, USB\VID_05C6&PID_9001&MI_01
+%SimDevice90020%  = SimPortInstall00, USB\VID_05C6&PID_9002&MI_00
+%SimDevice90021%  = SimPortInstall00, USB\VID_05C6&PID_9002&MI_01
+%SimDevice90030%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_00
+%SimDevice90031%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_01
+%SimDevice90032%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_02
+%SimDevice32001%  = SimPortInstall00, USB\VID_05C6&PID_3200&MI_01
+%SimDevice32002%  = SimPortInstall00, USB\VID_05C6&PID_3200&MI_02
+%SimDevice90040%  = SimPortInstall00, USB\VID_05C6&PID_9004&MI_00
+%SimDevice90050%  = SimPortInstall00, USB\VID_05C6&PID_9005&MI_00
+%SimDevice90120%  = SimPortInstall00, USB\VID_05C6&PID_9012&MI_00
+%SimDevice90130%  = SimPortInstall00, USB\VID_05C6&PID_9013&MI_00
+%SimDevice90160%  = SimPortInstall00, USB\VID_05C6&PID_9016&MI_00
+%SimDevice90162%  = SimPortInstall00, USB\VID_05C6&PID_9016&MI_02
+%SimDevice90170%  = SimPortInstall00, USB\VID_05C6&PID_9017&MI_00
+%SimDevice90172%  = SimPortInstall00, USB\VID_05C6&PID_9017&MI_02
+%SimDeviceF0051%  = SimPortInstall00, USB\VID_05C6&PID_F005&MI_01
+
+[SimSerialPort.NTia64]
+%SimDevice00% = SimPortInstall00, USB\VID_05C6&PID_3197&MI_01
+%SimDevice6k%   = SimPortInstall00, USB\VID_05C6&PID_6000&MI_01
+%SimDeviceNMEA% = SimPortInstall00, USB\VID_05C6&PID_6000&MI_02
+%SimDevice7k%   = SimPortInstall00, USB\VID_05C6&PID_7000&MI_01
+%SimDevice7k1%  = SimPortInstall00, USB\VID_05C6&PID_7001&MI_00
+%SimDevice7k3%  = SimPortInstall00, USB\VID_05C6&PID_7001&MI_03
+%SimDevice70020%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_00
+%SimDevice70023%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_03
+%SimDevice70024%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_04
+%SimDevice71010%  = SimPortInstall00, USB\VID_05C6&PID_7101&MI_00
+%SimDevice71015%  = SimPortInstall00, USB\VID_05C6&PID_7101&MI_05
+%SimDevice71020%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_00
+%SimDevice71025%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_05
+%SimDevice71026%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_06
+%SimDevice80000%  = SimPortInstall00, USB\VID_05C6&PID_8000&MI_00
+%SimDevice80002%  = SimPortInstall00, USB\VID_05C6&PID_8000&MI_02
+%SimDevice80010%  = SimPortInstall00, USB\VID_05C6&PID_8001&MI_00
+%SimDevice80012%  = SimPortInstall00, USB\VID_05C6&PID_8001&MI_02
+%SimDevice80020%  = SimPortInstall00, USB\VID_05C6&PID_8002&MI_00
+%SimDevice80022%  = SimPortInstall00, USB\VID_05C6&PID_8002&MI_02
+%SimDevice90080%  = SimPortInstall00, USB\VID_05C6&PID_9008
+%SimDevice90000%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_00
+%SimDevice90001%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_01
+%SimDevice90002%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_02    ;add by aaron
+%SimDevice90010%  = SimPortInstall00, USB\VID_05C6&PID_9001&MI_00
+%SimDevice90011%  = SimPortInstall00, USB\VID_05C6&PID_9001&MI_01
+%SimDevice90020%  = SimPortInstall00, USB\VID_05C6&PID_9002&MI_00
+%SimDevice90021%  = SimPortInstall00, USB\VID_05C6&PID_9002&MI_01
+%SimDevice90030%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_00
+%SimDevice90031%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_01
+%SimDevice90032%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_02
+%SimDevice32001%  = SimPortInstall00, USB\VID_05C6&PID_3200&MI_01
+%SimDevice32002%  = SimPortInstall00, USB\VID_05C6&PID_3200&MI_02
+%SimDevice90040%  = SimPortInstall00, USB\VID_05C6&PID_9004&MI_00
+%SimDevice90050%  = SimPortInstall00, USB\VID_05C6&PID_9005&MI_00
+%SimDevice90120%  = SimPortInstall00, USB\VID_05C6&PID_9012&MI_00
+%SimDevice90130%  = SimPortInstall00, USB\VID_05C6&PID_9013&MI_00
+%SimDevice90160%  = SimPortInstall00, USB\VID_05C6&PID_9016&MI_00
+%SimDevice90162%  = SimPortInstall00, USB\VID_05C6&PID_9016&MI_02
+%SimDevice90170%  = SimPortInstall00, USB\VID_05C6&PID_9017&MI_00
+%SimDevice90172%  = SimPortInstall00, USB\VID_05C6&PID_9017&MI_02
+%SimDeviceF0051%  = SimPortInstall00, USB\VID_05C6&PID_F005&MI_01
+
+[SimSerialPort.NTamd64]
+%SimDevice00% = SimPortInstall00, USB\VID_05C6&PID_3197&MI_01
+%SimDevice6k%   = SimPortInstall00, USB\VID_05C6&PID_6000&MI_01
+%SimDeviceNMEA% = SimPortInstall00, USB\VID_05C6&PID_6000&MI_02
+%SimDevice7k%   = SimPortInstall00, USB\VID_05C6&PID_7000&MI_01
+%SimDevice7k1%  = SimPortInstall00, USB\VID_05C6&PID_7001&MI_00
+%SimDevice7k3%  = SimPortInstall00, USB\VID_05C6&PID_7001&MI_03
+%SimDevice70020%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_00
+%SimDevice70023%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_03
+%SimDevice70024%  = SimPortInstall00, USB\VID_05C6&PID_7002&MI_04
+%SimDevice71010%  = SimPortInstall00, USB\VID_05C6&PID_7101&MI_00
+%SimDevice71015%  = SimPortInstall00, USB\VID_05C6&PID_7101&MI_05
+%SimDevice71020%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_00
+%SimDevice71025%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_05
+%SimDevice71026%  = SimPortInstall00, USB\VID_05C6&PID_7102&MI_06
+%SimDevice80000%  = SimPortInstall00, USB\VID_05C6&PID_8000&MI_00
+%SimDevice80002%  = SimPortInstall00, USB\VID_05C6&PID_8000&MI_02
+%SimDevice80010%  = SimPortInstall00, USB\VID_05C6&PID_8001&MI_00
+%SimDevice80012%  = SimPortInstall00, USB\VID_05C6&PID_8001&MI_02
+%SimDevice80020%  = SimPortInstall00, USB\VID_05C6&PID_8002&MI_00
+%SimDevice80022%  = SimPortInstall00, USB\VID_05C6&PID_8002&MI_02
+%SimDevice90080%  = SimPortInstall00, USB\VID_05C6&PID_9008
+%SimDevice90000%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_00
+%SimDevice90001%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_01
+%SimDevice90002%  = SimPortInstall00, USB\VID_05C6&PID_9000&MI_02    ;add by aaron
+%SimDevice90010%  = SimPortInstall00, USB\VID_05C6&PID_9001&MI_00
+%SimDevice90011%  = SimPortInstall00, USB\VID_05C6&PID_9001&MI_01
+%SimDevice90020%  = SimPortInstall00, USB\VID_05C6&PID_9002&MI_00
+%SimDevice90021%  = SimPortInstall00, USB\VID_05C6&PID_9002&MI_01
+%SimDevice90030%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_00
+%SimDevice90031%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_01
+%SimDevice90032%  = SimPortInstall00, USB\VID_05C6&PID_9003&MI_02
+%SimDevice32001%  = SimPortInstall00, USB\VID_05C6&PID_3200&MI_01
+%SimDevice32002%  = SimPortInstall00, USB\VID_05C6&PID_3200&MI_02
+%SimDevice90040%  = SimPortInstall00, USB\VID_05C6&PID_9004&MI_00
+%SimDevice90050%  = SimPortInstall00, USB\VID_05C6&PID_9005&MI_00
+%SimDevice90120%  = SimPortInstall00, USB\VID_05C6&PID_9012&MI_00
+%SimDevice90130%  = SimPortInstall00, USB\VID_05C6&PID_9013&MI_00
+%SimDevice90160%  = SimPortInstall00, USB\VID_05C6&PID_9016&MI_00
+%SimDevice90162%  = SimPortInstall00, USB\VID_05C6&PID_9016&MI_02
+%SimDevice90170%  = SimPortInstall00, USB\VID_05C6&PID_9017&MI_00
+%SimDevice90172%  = SimPortInstall00, USB\VID_05C6&PID_9017&MI_02
+%SimDeviceF0051%  = SimPortInstall00, USB\VID_05C6&PID_F005&MI_01
+
+[SimPortInstall00.NT]
+CopyFiles=QCUsbInfFiles, QCUsbDriverFiles
+AddReg = All00, AddReg
+
+[QCUsbInfFiles]
+qcusb.inf
+
+[QCUsbDriverFiles]
+qcusbser.sys
+
+[DestinationDirs]
+QCUsbInfFiles = 17
+DefaultDestDir = 12
+
+[SimPortInstall00.NT.Services]
+Include=qcusb.inf
+Needs=QC_PORT_Device.NT.Services
+
+[All00]
+HKR,,NTMPDriver,,qcusbser.sys
+
+[AddReg]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[Strings]
+SimSrcDisk = "SimTech USB Driver Disk"
+SIMTECH   = "SimTech Incorporated"
+SimDevice00 = "SimTech Diagnostics Interface 3197"
+SimDevice6k = "SimTech Diagnostics Interface 6000"
+SimDeviceNMEA = "SimTech NMEA Device"
+SimDevice7k = "SimTech Diagnostics Interface 7000"
+SimDevice7k1 = "SimTech RRDM 7001"
+SimDevice7k3 = "SimTech Diagnostics Interface 7001"
+SimDevice70020 = "SimTech RRDM 7002"
+SimDevice70023 = "SimTech Diagnostics Interface 7002"
+SimDevice70024 = "SimTech NMEA 7002"
+SimDevice71010 = "SimTech RRDM 7101"
+SimDevice71015 = "SimTech Diagnostics Interface 7101"
+SimDevice71020 = "SimTech RRDM 7102"
+SimDevice71025 = "SimTech Diagnostics Interface 7102"
+SimDevice71026 = "SimTech NMEA 7102"
+SimDevice80000 = "SimTech HS-USB Diagnostics 8000"
+SimDevice80002 = "SimTech HS-USB NMEA 8000"
+SimDevice80010 = "SimTech HS-USB Diagnostics 8001"
+SimDevice80012 = "SimTech HS-USB NMEA 8001"
+SimDevice80020 = "SimTech HS-USB Diagnostics 8002"
+SimDevice80022 = "SimTech HS-USB NMEA 8002"
+SimDevice90080 = "SimTech HS-USB QDLoader 9008"
+SimDevice90000 = "SimTech HS-USB Diagnostics 9000"
+SimDevice90001 = "SimTech HS-USB NMEA 9000"
+SimDevice90002 = "SimTech HS-USB AT Port 9000"    ;add by aaron
+SimDevice90010 = "SimTech HS-USB Diagnostics 9001"
+SimDevice90011 = "SimTech HS-USB NMEA 9001"
+SimDevice90020 = "SimTech HS-USB Diagnostics 9002"
+SimDevice90021 = "SimTech HS-USB NMEA 9002"
+SimDevice90030 = "SimTech HS-USB Diagnostics 9003"
+SimDevice90031 = "SimTech HS-USB NMEA 9003"
+SimDevice90032 = "SimTech HS-USB AT Port 9003"
+SimDevice32001 = "SimTech WinMobile Diagnostics 3200"
+SimDevice32002 = "SimTech WinMobile NMEA 3200"
+SimDevice90040 = "SimTech HS-USB Diagnostics 9004"
+SimDevice90050 = "SimTech HS-USB Diagnostics 9005"
+SimDevice90120 = "SimTech HS-USB Diagnostics 9012"
+SimDevice90130 = "SimTech HS-USB Diagnostics 9013"
+SimDevice90160 = "SimTech HS-USB Diagnostics 9016"
+SimDevice90162 = "SimTech HS-USB NMEA 9016"
+SimDevice90170 = "SimTech HS-USB Diagnostics 9017"
+SimDevice90172 = "SimTech HS-USB NMEA 9017"
+SimDeviceF0051 = "SimTech HS-USB Diagnostics F005"
